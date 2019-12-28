@@ -1,1 +1,1 @@
-apt install julia
+sudo apt install julia
