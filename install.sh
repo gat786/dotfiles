@@ -10,8 +10,8 @@ else
 fi;
 
 BREW_VERSION=5.1.7;
-wget https://github.com/Homebrew/brew/releases/download/$BREW_VERSION/Homebrew.pkg \
-    -O $OUTPUT_DIR/Homebrew.pkg
+curl -L https://github.com/Homebrew/brew/releases/download/$BREW_VERSION/Homebrew.pkg \
+    --output $OUTPUT_DIR/Homebrew.pkg
 
 sudo installer -verbose -pkg $OUTPUT_DIR/Homebrew.pkg -target ~
 
