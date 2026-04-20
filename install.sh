@@ -25,4 +25,4 @@ else
 fi
 
 
-brew bundle check
+brew bundle install
