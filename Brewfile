@@ -1,4 +1,4 @@
-tap "hashicorp/tap"
+tap "hashicorp/tap", trusted: true
 # General-purpose data compression with high compression ratio
 brew "xz"
 # Official Amazon AWS command-line interface
@@ -51,6 +51,8 @@ brew "lua"
 brew "minikube"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
 # Prometheus exporter for machine metrics
 brew "node_exporter"
 # Manage multiple Node.js versions
@@ -89,8 +91,6 @@ brew "wget"
 brew "yarn"
 # Tool for managing your YubiKey configuration
 brew "ykman"
-# Download YouTube videos from the command-line
-brew "youtube-dl", args: ["HEAD"]
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 # Command-line tool for the YubiKey PIV application
@@ -99,6 +99,8 @@ brew "yubico-piv-tool"
 brew "zig"
 # Language Server for Zig
 brew "zls"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
 # Distribution of the Python and R programming languages for scientific computing
 cask "anaconda"
 # Photography workflow application and raw developer
@@ -107,16 +109,20 @@ cask "darktable"
 cask "firefox"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "gcloud-cli"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Cross-platform Git credential storage for multiple hosting providers
 cask "git-credential-manager"
 # Tools to protect your emails and files
 cask "gpg-suite"
 # Development environment
-cask "hashicorp/tap/hashicorp-vagrant"
+cask "hashicorp/tap/hashicorp-vagrant", trusted: true
 # Open source API development ecosystem
 cask "hoppscotch"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Office suite
+cask "microsoft-office"
 # Orchestrates virtual Ubuntu instances
 cask "multipass"
 # VPN client for secure internet access and private browsing
@@ -129,12 +135,16 @@ cask "obs"
 cask "podman-desktop"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Team communication and collaboration software
+cask "slack"
 # Virtualiser for arm64 hardware
 cask "virtualbox"
 # Open-source code editor
 cask "visual-studio-code"
 # Rust-based terminal
 cask "warp"
+# Gecko based web browser
+cask "zen"
 vscode "4ops.terraform"
 vscode "anseki.vscode-color"
 vscode "ardenivanov.svelte-intellisense"
@@ -149,8 +159,6 @@ vscode "dsznajder.es7-react-js-snippets"
 vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
 vscode "github.codespaces"
-vscode "github.copilot"
-vscode "github.copilot-chat"
 vscode "github.vscode-github-actions"
 vscode "github.vscode-pull-request-github"
 vscode "golang.go"
@@ -164,7 +172,6 @@ vscode "juanblanco.solidity"
 vscode "leo-labs.dotnet"
 vscode "mccarter.start-git-bash"
 vscode "mechatroner.rainbow-csv"
-vscode "ms-azuretools.vscode-azureappservice"
 vscode "ms-azuretools.vscode-azurefunctions"
 vscode "ms-azuretools.vscode-azureresourcegroups"
 vscode "ms-azuretools.vscode-azurestaticwebapps"
@@ -172,10 +179,10 @@ vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-dotnettools.csdevkit"
 vscode "ms-dotnettools.csharp"
-vscode "ms-dotnettools.vscode-dotnet-runtime"
 vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
 vscode "ms-pyright.pyright"
 vscode "ms-python.debugpy"
+vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-python.vscode-python-envs"
 vscode "ms-toolsai.jupyter"
@@ -185,8 +192,8 @@ vscode "ms-toolsai.vscode-jupyter-cell-tags"
 vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode.cmake-tools"
+vscode "ms-vscode.cpp-devtools"
 vscode "ms-vscode.cpptools"
-vscode "ms-vscode.cpptools-extension-pack"
 vscode "ms-vscode.cpptools-themes"
 vscode "ms-vscode.powershell"
 vscode "ms-vscode.vscode-typescript-next"
@@ -216,4 +223,3 @@ go "github.com/josharian/impl"
 go "honnef.co/go/tools/cmd/staticcheck"
 go "github.com/open-telemetry/opentelemetry-collector-contrib/cmd/telemetrygen"
 cargo "cross"
-npm "corepack"
