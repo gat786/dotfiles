@@ -105,6 +105,8 @@ cask "1password"
 cask "anaconda"
 # Photography workflow application and raw developer
 cask "darktable"
+# Voice and text chat software
+cask "discord"
 # Web browser
 cask "firefox"
 # Set of tools to manage resources and applications hosted on Google Cloud
