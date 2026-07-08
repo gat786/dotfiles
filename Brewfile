@@ -145,6 +145,8 @@ cask "virtualbox"
 cask "visual-studio-code"
 # Rust-based terminal
 cask "warp"
+# Multiplayer code editor
+cask "zed"
 # Gecko based web browser
 cask "zen"
 vscode "4ops.terraform"
