@@ -31,6 +31,8 @@ brew "go"
 brew "handbrake"
 # Kubernetes package manager
 brew "helm"
+# Tools and libraries to manipulate images in select formats
+brew "imagemagick"
 # Istio configuration command-line utility
 brew "istioctl"
 # Git-compatible distributed version control system
@@ -121,6 +123,8 @@ cask "gpg-suite"
 cask "hashicorp/tap/hashicorp-vagrant", trusted: true
 # Open source API development ecosystem
 cask "hoppscotch"
+# Vector graphics editor
+cask "inkscape"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Office suite
