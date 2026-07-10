@@ -139,6 +139,8 @@ cask "podman-desktop"
 cask "rectangle"
 # Team communication and collaboration software
 cask "slack"
+# Messaging app with a focus on speed and security
+cask "telegram"
 # Virtualiser for arm64 hardware
 cask "virtualbox"
 # Open-source code editor
