@@ -55,16 +55,15 @@ if [[ ! -d "$OHMYZSH_DIR" ]]; then
     -o "$OUTPUT_DIR/oh-my-zsh-install.sh"
   (cd "$OUTPUT_DIR" && sh oh-my-zsh-install.sh)
 else
-  echo "oh-my-zsh installation already exists";
+  echo "oh-my-zsh installation already exists, no need to install";
 fi
 
-echo "Setting nvim theme";
+echo "Setting nvim theme, action is idempotent";
 sed -i "" 's/ZSH_THEME.*/ZSH_THEME="fino-time"/g' ~/.zshrc
 
 GITCONFIG=$HOME/.gitconfig
 
-if [[ ! -d $GITCONFIG ]]; then
-
+if [[ ! -f $GITCONFIG ]]; then
 echo "Gitconfig not found, setting the default config that uses 1Password";
 # cannot indent heredoc, it causes issues
 # writing it on the same line
@@ -83,4 +82,15 @@ cat << EOF >> $GITCONFIG
 [commit]
   gpgsign = true
 EOF
+else
+  echo "Gitconfig was already present, leaving it as it is";
 fi
+
+SAVED_ZED_SETTINGS_FILE="config-files/zed-settings.jsonc"
+
+ZED_SETTINGS_DIR=$HOME/.config/zed
+ZED_SETTINGS_FILE_NAME=settings.json
+ZED_SETTINGS_FILE_PATH=${ZED_SETTINGS_DIR}/${ZED_SETTINGS_FILE_NAME}
+
+echo "Updating zed settings";
+cp $SAVED_ZED_SETTINGS_FILE $ZED_SETTINGS_FILE_PATH
