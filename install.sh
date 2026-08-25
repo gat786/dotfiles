@@ -1,4 +1,5 @@
-#!/bin/zsh
+#!/bin/bash
+set -euo pipefail
 
 OUTPUT_DIR=~/.dotfiles-downloads
 if [[ -d $OUTPUT_DIR ]]; then
@@ -9,10 +10,7 @@ else
     mkdir -p $OUTPUT_DIR;
 fi;
 
-brew -v
-EXISTS=$?
-
-if [[ $EXISTS -ne 0 ]]; then
+if ! brew -v &>/dev/null; then
 	echo "Brew is not installed installing it.";
 	ORG=Homebrew
 	REPO=brew
@@ -67,7 +65,7 @@ if [[ ! -f $GITCONFIG ]]; then
 echo "Gitconfig not found, setting the default config that uses 1Password";
 # cannot indent heredoc, it causes issues
 # writing it on the same line
-cat << EOF >> $GITCONFIG
+cat << EOF > $GITCONFIG
 [user]
   name = Ganesh Tiwari
   email = ganesht049@gmail.com
