@@ -31,6 +31,8 @@ brew "go"
 brew "handbrake"
 # Kubernetes package manager
 brew "helm"
+# Improved top (interactive process viewer)
+brew "htop"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Istio configuration command-line utility
@@ -47,18 +49,32 @@ brew "kustomize"
 brew "labctl"
 # Linux virtual machines
 brew "lima"
+# Generic machine emulator and virtualizer
+brew "qemu"
+# Additional guest agents for Lima
+brew "lima-additional-guestagents"
+# Next-gen compiler infrastructure
+brew "llvm"
 # Powerful, lightweight programming language
 brew "lua"
-# Run a Kubernetes cluster locally
-brew "minikube"
-# Ambitious Vim-fork focused on extensibility and agility
-brew "neovim"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
+# Easily convert Marp Markdown files into static HTML/CSS, PDF, PPT and images
+brew "marp-cli"
+# Run a Kubernetes cluster locally
+brew "minikube"
+# Mongrel of mail user agents (part elm, pine, mush, mh, etc.)
+brew "mutt"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
 # Prometheus exporter for machine metrics
 brew "node_exporter"
 # Manage multiple Node.js versions
 brew "nvm"
+# Programming language with focus on simplicity, performance and modern systems
+brew "odin"
+# AI coding agent, built for the terminal
+brew "opencode"
 # Development kit for the Java programming language
 brew "openjdk"
 # Shell command parallelization utility
@@ -73,8 +89,8 @@ brew "podman"
 brew "poetry"
 # Python version management
 brew "pyenv"
-# Generic machine emulator and virtualizer
-brew "qemu"
+# Rsync for cloud storage
+brew "rclone"
 # Safe, concurrent, practical language
 brew "rust"
 # Cross-shell prompt for astronauts
@@ -87,6 +103,8 @@ brew "terraform-docs"
 brew "tfenv"
 # Terminal multiplexer
 brew "tmux"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Internet file retriever
 brew "wget"
 # JavaScript package manager
@@ -103,12 +121,20 @@ brew "zig"
 brew "zls"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+# Command-line interface for 1Password
+cask "1password-cli"
 # Distribution of the Python and R programming languages for scientific computing
 cask "anaconda"
+# Web browser focusing on privacy
+cask "brave-browser"
+# Ghostty-based terminal with vertical tabs and notifications for AI coding agents
+cask "cmux"
 # Photography workflow application and raw developer
 cask "darktable"
 # Voice and text chat software
 cask "discord"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
 # Web browser
 cask "firefox"
 # Set of tools to manage resources and applications hosted on Google Cloud
@@ -131,6 +157,8 @@ cask "iterm2"
 cask "microsoft-office"
 # Orchestrates virtual Ubuntu instances
 cask "multipass"
+# Free and open-source RSS reader
+cask "netnewswire"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
 # App to write, plan, collaborate, and get organised
@@ -145,6 +173,8 @@ cask "rectangle"
 cask "slack"
 # Messaging app with a focus on speed and security
 cask "telegram"
+# Virtual machines UI using QEMU
+cask "utm"
 # Virtualiser for arm64 hardware
 cask "virtualbox"
 # Open-source code editor
@@ -233,3 +263,4 @@ go "github.com/josharian/impl"
 go "honnef.co/go/tools/cmd/staticcheck"
 go "github.com/open-telemetry/opentelemetry-collector-contrib/cmd/telemetrygen"
 cargo "cross"
+npm "corepack"
